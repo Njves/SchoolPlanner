@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">School Planner</string>
+    <string name="register_link">Ещё не зарегистрированы?</string>
+    <string name="login_link">Войти</string>
+    <string name="login_hint_name">Логин</string>
+    <string name="login_hint_password">Пароль</string>
+    <string name="login_text_enter">Войти</string>
+    <string name="register_next_step">Далее</string>
+    <string name="login_text_forgot_pass">Забыли пароль?</string>
+    <string name="register_hint_pass_retry">Повторите пароль</string>
+    <string name="register_hint_name">Придумайте логин</string>
+    <string name="register_hint_pass">Придумайте пароль</string>
+    <string name="register_hint_email">Введите email</string>
+    <string name="profile_button_submit">Подтвердить</string>
+    <string name="login_text_rem_me">Запомнить меня</string>
+    <string name="register">Зарегистрироваться</string>
+
+</resources>
