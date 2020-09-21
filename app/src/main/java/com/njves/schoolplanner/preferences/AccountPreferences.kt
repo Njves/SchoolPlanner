@@ -11,7 +11,16 @@ class AccountPreferences(private val context: Context) {
         const val ID = "id"
         const val EMAIL = "email"
         const val ACCOUNT = "account"
+        private var instance: AccountPreferences? = null
+        fun getInstance(context: Context): AccountPreferences{
+            if(instance == null){
+                instance = AccountPreferences(context)
+                return instance!!
+            }
+            return instance!!
+        }
     }
+
     init{
         preferences = context.getSharedPreferences(PREF_NAME, MODE_PRIVATE)
 
@@ -42,6 +51,8 @@ class AccountPreferences(private val context: Context) {
         editor.putString(ACCOUNT, account)
         editor.apply()
     }
+    fun containsAccount() = preferences.contains(ACCOUNT)
+
 
 
 }
